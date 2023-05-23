@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
+   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+    <link rel="stylesheet" href="borrw book.css" />
+    <script src="../jquery.min.js"></script>
+    <title>borrowed-books</title>
+    
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="../touxiang.jpg" alt="user" />
+        <!-- 
+          img-name:touxiang.jpg
+          souerce:https://inews.gtimg.com/newsapp_bt/0/14268115578/1000
+         -->
+      </div>
+      <ul>
+        <li><a href="../main/main.html">Home</a></li>
+        
+        <li><a href="../seat/seat.html">Seat reservation</a></li>
+        <li><a href="../shoplist/shoplist.html">Store shopping</a></li>
+        <li><a href="./borrow book.html">Book borrowing</a></li>
+        <li><a href="../return/return.html">Borrowing Records&<br>Shopping<br> Orders</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      a<br>
+      <br>
+      <br>
+      <br><br><br><br><br>
+      
+      a<br>
+      
+      <div class="video-container">
+        <video src="./vedio.mp4" autoplay controls></video>
+          <!-- 
+          vedio-name:Good Book Recommendation
+          Author:Grandpa William
+          Date:2021-2-10
+          souerce:https://www.bilibili.com/video/BV1tD4y1G7rZ/?spm_id_from=333.999.0.0&vd_source=72a7879c7a9196ac8635c658217cbbf8
+         -->
+        
+      </div>
+      <div id="first4"><i><h2>When you are lost <br>seven good books are recommended<br>click it➩</h2></i></div>
+     
+      
+      
+    </header>
+
+    <div class="containers">
+      <div class="containers">
+        <h1 class="header1"><i>Books - the treasure of the world—— Thoreau !!</i></h1>
+        <div>
+          <label for="search">search for:</label>
+          <input type="text" id="search" placeholder=" book name or author..">
+          <button id="search-btn">search</button>
+        </div>
+        <div id="books-container">
+          <!-- Dynamically generate a book list(DIY) -->
+        </div>
+        <div class="borrowed-books" >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have borrowed  <span id="borrowed-count">0</span> books
+        </div>
+        <div class="bar3"><img src="./ending.jpg"></div>
+         <!-- 
+          img-name:ending.jpg
+          souerce:https://www.amazon.cn/s?k=book&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&ref=nb_sb_noss
+         -->
+      </div>
+    </div>
+  
+
+   
+    <script src="bookjs.js"></script>
+    <script src="brrow book.js"></script>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

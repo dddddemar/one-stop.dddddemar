@@ -1,0 +1,313 @@
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  body.show-nav {
+    /* Width of nav */
+    transform: translateX(200px);
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+  }
+  .return-button{
+background-color: #be2edd;
+
+  }
+  
+  nav .logo {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul li:first-of-type {
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin: 30px 0;
+  }
+  
+  button,
+  input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .toggle {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .cta-btn {
+    padding: 12px 30px;
+    font-size: 20px;
+  }
+  
+  .container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+  }
+  
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-form div {
+    margin: 15px 0;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .close-btn {
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+  .book {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.book h3,
+.book p {
+    margin: 5px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.container .bar5 img{
+  position: absolute;
+  left: 50px;
+  top: 1700px;
+  max-width: 2000px;
+  max-height: 2000px;
+  width: 1127px;
+  height:180px;
+
+}
+
+.book button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #be2edd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#customers
+{
+   font-family : "Trebuchet MS", Arial, Helvetica, sans-serif ;
+   width : 100% ;
+   border-collapse : collapse ;
+}
+/*The styles of the td and th tags in the tag with the ID of customers*/
+#customers td,  #customers th
+{
+   font-size : 1em ;
+   border : 1px solid #30336b ;
+   padding : 3px 7px 2px 7px ;
+   text-align: center;
+}
+/*The style of the th tag in the tag with ID 'customers'*/
+#customers th
+{
+   font-size : larger;
+   text-align : left ;
+   padding-top : 0px ;
+   padding-bottom : 5px ;
+   background-color : #be2edd ;
+   color : white ;
+   text-align: center;
+
+}
+/*The style of the td tag in the tr tag with the class name alt in the tag with the ID of customers*/
+#customers tr.alt td
+{
+  background-color : #be2edd ;
+   color : white ;  
+   text-align: center;
+}
+
+
+#books-container {
+    text-align: center;
+    
+}
+#e1{
+  height: 400px;
+  width: 200px;
+}
+#borrowed-count {
+    text-align: right;
+    margin: 10px;
+}
+.book{
+  border: #be2edd solid 3px ;
+  border-radius: 5px;
+}
+#search-form {
+    margin: 10px;
+}
+
+#search {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}

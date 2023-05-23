@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+     <!-- Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+    <script src="../jquery.min.js"></script>
+    <link rel="stylesheet" href="return.css" />
+    <title>return page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="../touxiang.jpg" alt="user" />
+        <!-- 
+          img-name:touxiang.jpg
+          souerce:https://inews.gtimg.com/newsapp_bt/0/14268115578/1000
+         -->
+      </div>
+      <ul>
+        <li><a href="../main/main.html">Home</a></li>
+        
+        <li><a href="../seat/seat.html">Seat reservation</a></li>
+        <li><a href="../shoplist/shoplist.html">Store shopping</a></li>
+        <li><a href="../book/borrow book.html">Book borrowing</a></li>
+        <li><a href="return.html">Borrowing Records&<br>Shopping<br> Orders</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>Daily inspirational stories</h1>
+
+      <p>
+        In the ward, a critically ill patient saw a tree outside the window, 
+        falling one by one in the autumn wind. The patient looked at the rustling leaves in front of him, 
+        and his body also deteriorated day by day. She said, "When all the leaves fall off, I will die too." 
+        After learning about it, an old painter used a colored pen to draw a leaf with green veins hanging on a branch. 
+        The last leaf never fell. Just because of this green patch in life, the patient miraculously survived.
+      </p>
+      <!-- Inspirational Stories
+        source:https://www.zhihu.com/
+       -->
+      <p>--O. Henry</p>
+
+      <button class="cta-btn" id="open" ><a href="https://zhuanlan.zhihu.com/">Learn more</a></button>
+       <!--hyperlink
+        source:https://www.zhihu.com/
+       -->
+    </header>
+
+    <div class="container">
+        <h1><i>The books you have already borrowed:</i></h1>
+        <div id="borrowed-count"></div>
+        <div id="search-form">
+          <label for="search">search for:</label>
+          <input type="text" id="search" placeholder=" book name or author..">
+          <button id="search-btn">search</button>
+        </div>
+        <div id="books-container"></div>
+        <h1><i>Your Shopping orders:</i></h1>
+        <table  id =  "customers" >
+          <tr >
+             <th  ><i>Shopping images</i>  </th >
+             <th  > <i>Shopping quantity</i>  </th >
+             <th  ><i>amount</i>  </th >
+          </tr >
+          <tr >
+             <td  > <img src="../shoplist/Cappuccino.jpg" height="100px" width="100px"></td >
+               <!-- 
+             img-name:Cappuccino.jpg
+             souerce:https://img1.baidu.com/it/u=2826930152,2103330653&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1684515600&t=9a3dd11f0f9c174ee22a32458ec95b26
+                -->
+             <td  > 2</td >
+             <td  > 24</td >
+          </tr >
+          <tr  class =  "alt" >
+             <td  > <img src="../shoplist/Co branded water cup.jpg" height="100px" width="100px"> </td >
+                <!-- 
+             img-name:Co branded water cup.jpg
+             souerce:https://img2.baidu.com/it/u=3472330311,2733216461&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666
+                -->
+             <td  > 1 </td >
+             <td  > 20</td >
+          </tr >
+          <tr >
+             <td  > <img src="../shoplist/juice.jpg" height="100px" width="100px"> </td >
+                <!-- 
+             img-name:juice.jpg
+             souerce:https://img2.baidu.com/it/u=2124370433,2316443252&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500
+                -->
+             <td  > 1 </td >
+             <td  > 6  </td >
+          </tr >
+          <tr  class =  "alt" >
+             <td  > <img src="../shoplist/natie.jpg" height="100px" width="100px"> </td >
+                <!-- 
+             img-name:natie.jpg
+             souerce:https://img1.baidu.com/it/u=3045364579,2004617519&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667
+                -->
+             <td  > 3</td  >
+             <td  > 33 </td >
+          </tr >
+          
+          </table >
+          <div class="bar5"><img src="./bar5.jpg"></div>
+          <!-- 
+          img-name:bar5.jpg
+          souerce:https://www.amazon.cn/
+         -->
+          
+    </div>
+    <script src="return1.js"></script>
+   
+   
+    
+    
+   
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,395 @@
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  /* 设置body和h1元素的样式 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  .lunbo{
+    width: 600px;
+    height: 200px;    
+    right: 0px;
+    position:absolute;
+    top: 0px;
+   
+
+}
+#panel
+{   width: 230px;
+    height:230px;
+	padding:0px;
+	text-align:center;
+	background-color:#30336b;
+	border:solid 3px #f6f6f6;
+}
+#flip
+{   width: 230px;
+    height:53px;
+	padding:0px;
+	text-align:center;
+	background-color:#30336b;
+	border:solid 3px #f6f6f6;
+  color: white;
+  font-size: larger;
+  border-radius: 10px;
+}
+#panel
+{
+	padding:0px;
+	display:none;
+}
+#panel img{
+  max-width: 300px;
+  max-height: 300px;
+}
+#allof{
+ position: absolute;
+ top: 270px;
+ left:15px;
+
+}
+#first1{
+  position: absolute;
+  left: -200px;
+  top: 45px;
+}
+#first2{
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+#first3{
+  position: absolute;
+  left: 40px;
+  top: 130px;
+}
+label{
+
+  color:#30336b
+}
+.lunbo img{
+    
+    width: 100%;
+    height:102.5%;
+}
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* 设置产品容器和产品元素的样式 */
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .container .product img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .product p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product button {
+    font-size: 24px;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .product button:hover {
+    transform: scale(1.2);
+  }
+  
+  .product .quantity {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .product .remove {
+    background-color: #ff6666;
+  }
+  
+  /* 设置总价格容器和付款按钮的样式 */
+  .total {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .total p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .total button {
+    font-size: 24px;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .total button:hover {
+    background-color: #006666;
+  }
+  .products .bar img{
+    position: fixed;
+    right: 0px;
+    top: 215px;
+    max-width: 500px;
+    max-height: 800px;
+    width: 30px;
+    height: 600px;
+  }
+  .products .bar1 img{
+    position: absolute;
+    border: #30336b solid 2px;
+    left: 50px;
+    top: 1000px;
+    max-width: 500px;
+    max-height: 800px;
+    width: 140px;
+    height:140px;
+    border-radius: 10%;
+  }
+  .products .bar2 img{
+    position: absolute;
+    left: 50px;
+    top: 1150px;
+    max-width: 2000px;
+    max-height: 2000px;
+    width: 1127px;
+    height:180px;
+    
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  body.show-nav {
+    /* Width of nav */
+    transform: translateX(200px);
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+  }
+  
+  nav .logo {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul li:first-of-type {
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin: 30px 0;
+  }
+  
+  button,
+  input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .toggle {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .cta-btn {
+    padding: 12px 30px;
+    font-size: 20px;
+  }
+  
+  .container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+    align-items: center;
+  }
+  
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-form div {
+    margin: 15px 0;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .close-btn {
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
